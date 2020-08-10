@@ -14,7 +14,44 @@
 
     <title>Bootstrap5 Landing Page</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navScrollspy">
+    <nav
+      class="navbar bg-primary navbar-dark navbar-expand-md fixed-top container-fluid"
+    >
+      <a href="#" class="navbar-brand">Caneo</a>
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-control="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="newScrollspy">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#description" class="nav-link">Description</a>
+          </li>
+          <li class="nav-item">
+            <a href="#trailer" class="nav-link">Trailer</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Showcase" class="nav-link">Showcase</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link">Reviews</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- Popper.js first, then Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
