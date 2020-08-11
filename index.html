@@ -13,49 +13,77 @@
     />
 
     <title>Bootstrap5 Landing Page</title>
+    <style type="text/css">
+      .jumbotron {
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+      section {
+        padding-top: 4rem;
+      }
+      #newsletter {
+        padding-top: 0;
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target="#navScrollspy">
     <nav class="navbar bg-primary navbar-dark navbar-expand-md fixed-top">
       <a href="#" class="navbar-brand">Cameo</a>
       <button
+        type="button"
         class="navbar-toggler navbar-toggler-right"
         data-toggle="collapse"
         data-target="#navbarNav"
-        aria-control="navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" id="newScrollspy">
+        <ul class="navbar-nav" id="navScrollspy">
           <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
+            <a class="nav-link" href="#top">To the top</a>
           </li>
           <li class="nav-item">
-            <a href="#description" class="nav-link">Description</a>
+            <a class="nav-link" href="#description">Description</a>
           </li>
           <li class="nav-item">
-            <a href="#trailer" class="nav-link">Trailer</a>
+            <a class="nav-link" href="#trailer">Trailer</a>
           </li>
           <li class="nav-item">
-            <a href="#Showcase" class="nav-link">Showcase</a>
+            <a class="nav-link" href="#showcase">Showcase</a>
           </li>
           <li class="nav-item">
-            <a href="#pricing" class="nav-link">Pricing</a>
+            <a class="nav-link" href="#features">Features</a>
           </li>
           <li class="nav-item">
-            <a href="#reviews" class="nav-link">Reviews</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
           </li>
         </ul>
       </div>
     </nav>
-    <section id="top" class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center">
+    <section
+      id="top"
+      class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center"
+    >
       <div class="container text-center">
         <h1 class="display-1 text-primary text-uppercase">Cameo</h1>
         <p class="display-4 d-none d-sm-block">Capture every moment</p>
-        <p class="lead">Create stunning photos and videos by using the built-in features for enhancement.</p>
-        <p class="lead">Share your best shots with your friends and the rest of the world instantly.</p>
+        <p class="lead">
+          Create stunning photos and videos by using the built-in features for
+          enhancement.
+        </p>
+        <p class="lead">
+          Share your best shots with your friends and the rest of the world
+          instantly.
+        </p>
         <p><strong>Download now on:</strong></p>
         <a href="#" class="btn btn-lg btn-primary">App Store</a>
         <a href="#" class="btn btn-lg btn-primary">Google Play</a>
@@ -79,91 +107,139 @@
           – this is just the beginning.
         </p>
       </section>
-    </div>
-    <section id="trailer">
-      <h2 class="display-4 text-center">Cameo trailer</h2>
-      <p class="text-center" >Watch our trailer video below to learn how Cameo works.</p>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Uq5JnknTTK8"></iframe>
-      </div>
-    </section>
-  </div>
-  <section id="showcase">
-    <h2 class="display-4 text-center">Cameo in action</h2>
-    <p class="text-center">Examples of how and where you can use Cameo.</p>
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-        <li data-target="#carousel" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <img src="showcase01.jpg" alt="Slide #1" class="d-block img-fluid">
-          <div class="carousel-caption">
-            <h3 class="display-4">At night</h3>
-            <p>Use Cameo at night when going out with friends.</p>
-          </div>
+      <section id="trailer">
+        <h2 class="display-4 text-center">Cameo trailer</h2>
+        <p class="text-center">
+          Watch our trailer video below to learn how Cameo works.
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/Uq5JnknTTK8"
+          ></iframe>
         </div>
-        <div class="carousel-item">
-          <img src="showcase02.jpg" alt="Slide #2" class="d-block img-fluid">
-          <div class="carousel-caption">
-            <h3 class="display-4">Outside</h3>
-            <p>Use Cameo outside when hiking in the nature.</p>
+      </section>
+      <section id="showcase">
+        <h2 class="display-4 text-center">Cameo in action</h2>
+        <p class="text-center">Examples of how and where you can use Cameo.</p>
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img
+                src="showcase01.jpg"
+                alt="Slide #1"
+                class="d-block img-fluid"
+              />
+              <div class="carousel-caption">
+                <h3 class="display-4">At night</h3>
+                <p>Use Cameo at night when going out with friends.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="showcase02.jpg"
+                alt="Slide #2"
+                class="d-block img-fluid"
+              />
+              <div class="carousel-caption">
+                <h3 class="display-4">Outside</h3>
+                <p>Use Cameo outside when hiking in the nature.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="showcase03.jpg"
+                alt="Slide #3"
+                class="d-block img-fluid"
+              />
+              <div class="carousel-caption">
+                <h3 class="display-4">In the sun</h3>
+                <p>Use Cameo even with strong and direct sun.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="showcase04.jpg"
+                alt="Slide #4"
+                class="d-block img-fluid"
+              />
+              <div class="carousel-caption">
+                <h3 class="display-4">In the distance</h3>
+                <p>Use Cameo to take clear photos of objects far away.</p>
+              </div>
+            </div>
           </div>
+          <a
+            href="#carousel"
+            class="carousel-control-prev"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            href="#carousel"
+            class="carousel-control-next"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="carousel-item">
-          <img src="showcase03.jpg" alt="Slide #3" class="d-block img-fluid">
-          <div class="carousel-caption">
-            <h3 class="display-4">In the sun</h3>
-            <p>Use Cameo even with strong and direct sun.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="showcase04.jpg" alt="Slide #4" class="d-block img-fluid">
-          <div class="carousel-caption">
-            <h3 class="display-4">In the distance</h3>
-            <p>Use Cameo to take clear photos of objects far away.</p>
-          </div>
-        </div>
-      </div>
-      <a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </section>
-</div>
-<section id="features">
+      </section>
+      <section id="features">
         <h2 class="display-4 text-center">Features</h2>
         <div class="row">
-          <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+          >
             <h3 class="h4 mb-4 text-center">Enhance your photos</h3>
-            <p>Easily enhance your photos with a selection of editing tools, filters and effects.</p>
+            <p>
+              Easily enhance your photos with a selection of editing tools,
+              filters and effects.
+            </p>
             <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+          >
             <h3 class="h4 mb-4 text-center">Also made for video</h3>
-            <p>With Cameo you get dedicated video effects like slow motion, timelapse and transitions.</p>
+            <p>
+              With Cameo you get dedicated video effects like slow motion,
+              timelapse and transitions.
+            </p>
             <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+          >
             <h3 class="h4 mb-4 text-center">Share on Instagram</h3>
-            <p>You can easily share your photos with your friends and the rest of the world on Instragram.</p>
+            <p>
+              You can easily share your photos with your friends and the rest of
+              the world on Instragram.
+            </p>
             <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+          <div
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+          >
             <h3 class="h4 mb-4 text-center">Works on all devices</h3>
-            <p>Cameo works on all platforms and all devices no matter the size of your screen.</p>
+            <p>
+              Cameo works on all platforms and all devices no matter the size of
+              your screen.
+            </p>
             <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
           </div>
         </div>
-      </section> 
+      </section>
       <section id="pricing">
         <h2 class="display-4 text-center">Choose your plan</h2>
         <div class="row">
@@ -174,7 +250,9 @@
                 <h4>Free</h4>
               </div>
               <div class="card-body">
-                <p class="card-text">Perfect if you only take pictures for fun.</p>
+                <p class="card-text">
+                  Perfect if you only take pictures for fun.
+                </p>
               </div>
               <ul class="list-group">
                 <li class="list-group-item">Enhance your photos and videos</li>
@@ -192,7 +270,9 @@
                 <h4>$1.99 / month</h4>
               </div>
               <div class="card-body">
-                <p class="card-text">Perfect if you're a semi-pro photographer.</p>
+                <p class="card-text">
+                  Perfect if you're a semi-pro photographer.
+                </p>
               </div>
               <ul class="list-group">
                 <li class="list-group-item">Enhance your photos and videos</li>
@@ -231,79 +311,208 @@
         <div class="row">
           <div class="col-12 col-md-6 col-xl-3">
             <blockquote class="blockquote p-3">
-              <p>This is the best camera app I have ever tried. I highly recommend Cameo!</p>
-              <footer class="blockquote-footer">Marc Johnson <time datetime="2017-06-15T14:35">(June 15 2017 14:35)</time></footer>
+              <p>
+                This is the best camera app I have ever tried. I highly
+                recommend Cameo!
+              </p>
+              <footer class="blockquote-footer">
+                Marc Johnson
+                <time datetime="2017-06-15T14:35">(June 15 2017 14:35)</time>
+              </footer>
             </blockquote>
           </div>
           <div class="col-12 col-md-6 col-xl-3">
             <blockquote class="blockquote p-3">
-              <p>I have never been able to take pictures in the darkness with good results before. Now I can with Cameo and I am so happy about that.</p>
-              <footer class="blockquote-footer">Hanna Eastwood <time datetime="2017-07-09T19:12">(July 09 2017 19:12)</time></footer>
+              <p>
+                I have never been able to take pictures in the darkness with
+                good results before. Now I can with Cameo and I am so happy
+                about that.
+              </p>
+              <footer class="blockquote-footer">
+                Hanna Eastwood
+                <time datetime="2017-07-09T19:12">(July 09 2017 19:12)</time>
+              </footer>
             </blockquote>
           </div>
           <div class="col-12 col-md-6 col-xl-3">
             <blockquote class="blockquote p-3">
-              <p>I have tried many different camera apps on the market, but with Cameo I am able to use the editing tools, filters and effects that I want in a creative and easy way.</p>
-              <footer class="blockquote-footer">Anna Foster <time datetime="2017-09-01T11:19">(September 01 2017 11:19)</time></footer>
+              <p>
+                I have tried many different camera apps on the market, but with
+                Cameo I am able to use the editing tools, filters and effects
+                that I want in a creative and easy way.
+              </p>
+              <footer class="blockquote-footer">
+                Anna Foster
+                <time datetime="2017-09-01T11:19"
+                  >(September 01 2017 11:19)</time
+                >
+              </footer>
             </blockquote>
           </div>
           <div class="col-12 col-md-6 col-xl-3">
             <blockquote class="blockquote p-3">
-              <p>I use the cloud storage feature of Cameo to have a backup of all my photos and videos. I find that feature incredibly valuable.</p>
-              <footer class="blockquote-footer">Tim Stevens <time datetime="2017-08-12T08:43">(August 12 2017 8:43)</time></footer>
+              <p>
+                I use the cloud storage feature of Cameo to have a backup of all
+                my photos and videos. I find that feature incredibly valuable.
+              </p>
+              <footer class="blockquote-footer">
+                Tim Stevens
+                <time datetime="2017-08-12T08:43">(August 12 2017 8:43)</time>
+              </footer>
             </blockquote>
           </div>
         </div>
       </section>
     </div>
-    <section class="bg-secondary">
+    <section id="newsletter" class="bg-secondary">
       <div class="container">
         <form class="py-5 text-white">
           <h2 class="text-center">Sign-up for our newsletter</h2>
-          <p>Receive the latest news and offers by signing up to our newsletter.</p>
+          <p>
+            Receive the latest news and offers by signing up to our newsletter.
+          </p>
           <div class="row">
             <div class="col-12 col-sm-6">
               <div class="form-group">
                 <label for="input-name" class="sr-only">Your name:</label>
-                <input type="text" class="form-control" placeholder="Firstname Lastname" id="input-name">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Firstname Lastname"
+                  id="input-name"
+                />
               </div>
             </div>
             <div class="col-12 col-sm-6">
               <div class="form-group">
                 <label for="input-email" class="sr-only">Your email:</label>
-                <input type="email" class="form-control" placeholder="mail@example.com" id="input-email">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="mail@example.com"
+                  id="input-email"
+                />
               </div>
             </div>
           </div>
           <div class="form-check">
             <label class="form-check-label">
-              <input type="checkbox" class="form-check-input" id="input-terms" value="terms">
-              I have read and accept the <a href="#" data-toggle="modal" data-target="#modal">terms and conditions</a>.
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="input-terms"
+                value="terms"
+              />
+              I have read and accept the
+              <a href="#" data-toggle="modal" data-target="#modal"
+                >terms and conditions</a
+              >.
             </label>
           </div>
           <div class="d-flex justify-content-between">
-            <small class="form-text">You can unsubcribe from the mailing list at any time.</small>
+            <small class="form-text"
+              >You can unsubcribe from the mailing list at any time.</small
+            >
             <button type="submit" class="btn btn-dark">Sign up</button>
           </div>
         </form>
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">>
+        <div
+          class="modal fade"
+          id="modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modalTitle"
+          aria-hidden="true"
+        >
+          >
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="modalTitle">Terms and conditions</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title" id="modalTitle">
+                  Terms and conditions
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod turpis, vitae semper ipsum augue a velit. Pellentesque id finibus velit. Ut sagittis maximus maximus. In aliquet enim sed turpis mollis ornare. Suspendisse elementum a magna eu luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia metus viverra, scelerisque enim sed, sollicitudin magna. Sed non augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget tortor ultricies pulvinar. Praesent euismod ut lorem sit amet bibendum.</p>
-                <p>Pellentesque vitae convallis magna. Morbi non elementum mi. Suspendisse at mollis arcu, eu tempus tellus. Aenean fringilla eleifend nisl. Aliquam erat volutpat. Sed a tortor quis tortor convallis mattis. Nunc congue massa vitae lectus dictum, a mattis metus dignissim.</p>
-                <p>Nulla feugiat, lorem sit amet vehicula hendrerit, velit eros pellentesque est, at dictum elit risus id diam. In ante lorem, blandit vel dui in, sagittis laoreet erat. Proin dictum sit amet urna ut placerat. Pellentesque laoreet, dolor vitae facilisis feugiat, quam quam gravida elit, nec sagittis orci metus at leo. In scelerisque felis vel neque lobortis ullamcorper. Praesent quis sagittis neque, nec eleifend neque. Suspendisse at consectetur eros. Mauris lectus libero, molestie vel dapibus sit amet, luctus gravida ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut libero neque, pretium quis malesuada eget, congue ac mauris.</p>
-                <p>Aenean quis tristique libero. Vestibulum sagittis, sapien gravida lobortis posuere, diam arcu auctor libero, at tempor mauris nulla vel odio. Phasellus semper eros rutrum mi scelerisque interdum. Maecenas euismod est sit amet justo vestibulum bibendum. Etiam scelerisque sodales nisi nec efficitur. Pellentesque arcu mauris, accumsan eget mollis at, ultrices id ante. Duis in mi eget nisi euismod gravida. Cras pharetra sollicitudin elit, vel eleifend felis dignissim non. Integer leo ex, feugiat eu lorem egestas, mollis suscipit nulla. Duis quis tellus nulla. Maecenas risus ipsum, fringilla at orci sit amet, mattis fringilla orci. Vivamus odio tellus, ornare eu leo id, pellentesque sodales ante.</p>
-                <p>Sed laoreet ut ligula eget fringilla. Suspendisse dapibus dui at ex dictum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi efficitur ac purus eget dignissim. Aliquam ultrices, orci finibus sollicitudin tempus, elit metus scelerisque magna, a rhoncus justo nisl vitae lectus. Nam mollis sed est ut ullamcorper. Curabitur consequat feugiat erat quis molestie. Fusce suscipit sem et nulla dignissim, id malesuada felis laoreet. Cras leo ligula, vulputate id mi ac, gravida porta sem. Mauris ullamcorper lectus ac eleifend elementum. Ut id velit consequat, facilisis leo vitae, volutpat nisi. Nunc hendrerit libero mi. Integer scelerisque mattis neque placerat condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eu odio mi. Duis interdum vulputate turpis pretium congue.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas feugiat, urna ut pharetra ultricies, augue tellus
+                  euismod turpis, vitae semper ipsum augue a velit. Pellentesque
+                  id finibus velit. Ut sagittis maximus maximus. In aliquet enim
+                  sed turpis mollis ornare. Suspendisse elementum a magna eu
+                  luctus. Etiam tincidunt mattis mauris, non lobortis nulla
+                  tempor in. Sed lacinia metus viverra, scelerisque enim sed,
+                  sollicitudin magna. Sed non augue sit amet nisl tincidunt
+                  ultrices. Praesent nec lacus eget tortor ultricies pulvinar.
+                  Praesent euismod ut lorem sit amet bibendum.
+                </p>
+                <p>
+                  Pellentesque vitae convallis magna. Morbi non elementum mi.
+                  Suspendisse at mollis arcu, eu tempus tellus. Aenean fringilla
+                  eleifend nisl. Aliquam erat volutpat. Sed a tortor quis tortor
+                  convallis mattis. Nunc congue massa vitae lectus dictum, a
+                  mattis metus dignissim.
+                </p>
+                <p>
+                  Nulla feugiat, lorem sit amet vehicula hendrerit, velit eros
+                  pellentesque est, at dictum elit risus id diam. In ante lorem,
+                  blandit vel dui in, sagittis laoreet erat. Proin dictum sit
+                  amet urna ut placerat. Pellentesque laoreet, dolor vitae
+                  facilisis feugiat, quam quam gravida elit, nec sagittis orci
+                  metus at leo. In scelerisque felis vel neque lobortis
+                  ullamcorper. Praesent quis sagittis neque, nec eleifend neque.
+                  Suspendisse at consectetur eros. Mauris lectus libero,
+                  molestie vel dapibus sit amet, luctus gravida ante. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Ut libero
+                  neque, pretium quis malesuada eget, congue ac mauris.
+                </p>
+                <p>
+                  Aenean quis tristique libero. Vestibulum sagittis, sapien
+                  gravida lobortis posuere, diam arcu auctor libero, at tempor
+                  mauris nulla vel odio. Phasellus semper eros rutrum mi
+                  scelerisque interdum. Maecenas euismod est sit amet justo
+                  vestibulum bibendum. Etiam scelerisque sodales nisi nec
+                  efficitur. Pellentesque arcu mauris, accumsan eget mollis at,
+                  ultrices id ante. Duis in mi eget nisi euismod gravida. Cras
+                  pharetra sollicitudin elit, vel eleifend felis dignissim non.
+                  Integer leo ex, feugiat eu lorem egestas, mollis suscipit
+                  nulla. Duis quis tellus nulla. Maecenas risus ipsum, fringilla
+                  at orci sit amet, mattis fringilla orci. Vivamus odio tellus,
+                  ornare eu leo id, pellentesque sodales ante.
+                </p>
+                <p>
+                  Sed laoreet ut ligula eget fringilla. Suspendisse dapibus dui
+                  at ex dictum hendrerit. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Morbi
+                  efficitur ac purus eget dignissim. Aliquam ultrices, orci
+                  finibus sollicitudin tempus, elit metus scelerisque magna, a
+                  rhoncus justo nisl vitae lectus. Nam mollis sed est ut
+                  ullamcorper. Curabitur consequat feugiat erat quis molestie.
+                  Fusce suscipit sem et nulla dignissim, id malesuada felis
+                  laoreet. Cras leo ligula, vulputate id mi ac, gravida porta
+                  sem. Mauris ullamcorper lectus ac eleifend elementum. Ut id
+                  velit consequat, facilisis leo vitae, volutpat nisi. Nunc
+                  hendrerit libero mi. Integer scelerisque mattis neque placerat
+                  condimentum. Pellentesque habitant morbi tristique senectus et
+                  netus et malesuada fames ac turpis egestas. Nulla eu odio mi.
+                  Duis interdum vulputate turpis pretium congue.
+                </p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
               </div>
             </div>
           </div>
@@ -346,11 +555,13 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <h6>Our location:</h6>
             <address>
-              <strong>Cameo</strong><br>
-              350 5th Avenue<br>
-              New York, NY 10118<br>
-              <abbr title="Telephone">T:</abbr> <a href="tel:+12127363100">(212) 736-3100</a><br>
-              <abbr title="Mail">M:</abbr> <a href="mailto:info@cameo.com">info@cameo.com</a>
+              <strong>Cameo</strong><br />
+              350 5th Avenue<br />
+              New York, NY 10118<br />
+              <abbr title="Telephone">T:</abbr>
+              <a href="tel:+12127363100">(212) 736-3100</a><br />
+              <abbr title="Mail">M:</abbr>
+              <a href="mailto:info@cameo.com">info@cameo.com</a>
             </address>
           </div>
         </div>
@@ -359,13 +570,29 @@
             <ul class="list-inline">
               <li class="list-inline-item">&copy; 2017 Cameo, Inc.</li>
               <li class="list-inline-item">All rights reserved.</li>
-              <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modal">Terms of use and privacy policy</a>.</li>
+              <li class="list-inline-item">
+                <a href="#" data-toggle="modal" data-target="#modal"
+                  >Terms of use and privacy policy</a
+                >.
+              </li>
             </ul>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="dropdown dropup">
-              <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change language</button>
-              <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm dropdown-toggle"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Change language
+              </button>
+              <div
+                class="dropdown-menu p-0"
+                aria-labelledby="dropdownMenuButton"
+              >
                 <a href="#" class="dropdown-item small px-1">English</a>
                 <a href="#" class="dropdown-item small px-1">German</a>
                 <a href="#" class="dropdown-item small px-1">French</a>
